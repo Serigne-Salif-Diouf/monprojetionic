@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sackass
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+
+
+<ion-content [fullscreen]="true" color="primary" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Sackass</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title> Menu </ion-title>
+      <ion-menu contentId="main-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">menu content.</ion-content>
+      </ion-menu>
+      <div class="ion-page" id="main-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding"> Tapper sur le bouton pour ouvrir le menu. </ion-content>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button id="open-action-sheet">Ouvrir</ion-button>
+  <ion-action-sheet trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons">
+  </ion-action-sheet>
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+</ion-content>
